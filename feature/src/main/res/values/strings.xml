@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">iLLaTask</string>
+    <string name="try_again">Try Again</string>
+    <string name="no_data_available">No Data available\n Please try again</string>
+    <string name="no_favourites_available">List is empty.</string>
+    <string name="favourites">Favourites</string>
+</resources>
