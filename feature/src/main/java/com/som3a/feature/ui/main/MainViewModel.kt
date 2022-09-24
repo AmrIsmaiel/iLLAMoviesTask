@@ -15,6 +15,11 @@ import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+/**
+ * This viewModel to handle all threading
+ * and data we need to save during the interaction
+ * with the view.
+ * */
 @HiltViewModel
 class MainViewModel @Inject constructor(
     private val getMoviesListUseCase: GetMoviesListUseCase,

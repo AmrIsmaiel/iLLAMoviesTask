@@ -7,6 +7,11 @@ import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 
 
+/**
+ * This class is a base for viewModels.
+ * here we handle all common cases and all abstract functions to be
+ * implemented in all created viewModels
+ * */
 abstract class BaseViewModel<Event : ViewAction, State : ViewState, Effect : ViewEvent> : ViewModel() {
 
     private val initialState : State by lazy { createInitialState() }

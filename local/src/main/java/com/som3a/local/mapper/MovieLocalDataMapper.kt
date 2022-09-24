@@ -5,6 +5,11 @@ import com.som3a.data.model.MovieDTO
 import com.som3a.local.model.MovieLocal
 import javax.inject.Inject
 
+/**
+ * This mapper is used to map between the local and the data layer
+ * compare between data classes if there are any missing values or null
+ * to handle it here
+ * */
 class MovieLocalDataMapper @Inject constructor() : Mapper<MovieLocal, MovieDTO> {
     override fun map(input: MovieLocal): MovieDTO {
         return MovieDTO(

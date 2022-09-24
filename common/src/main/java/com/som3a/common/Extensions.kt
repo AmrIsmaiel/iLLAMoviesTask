@@ -7,6 +7,11 @@ import android.net.NetworkInfo
 import android.os.Build
 import androidx.annotation.RequiresApi
 
+
+/**
+ * This file is to have all extensions function we use in the app
+ * */
+
 @Suppress("DEPRECATION")
 fun Context.haveNetworkConnection(): Boolean {
     val connectivityManager =

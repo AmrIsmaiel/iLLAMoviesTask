@@ -14,6 +14,11 @@ import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+/**
+ * This viewModel to handle all threading
+ * and data we need to save during the interaction
+ * with the view.
+ * */
 @HiltViewModel
 class FavouritesListViewModel @Inject constructor(
     private val getFavouriteListUseCase: GetFavouriteListUseCase,

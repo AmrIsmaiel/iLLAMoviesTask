@@ -5,7 +5,10 @@ import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding
 
-
+/**
+ * This class is a base for activities.
+ * here we handle all common cases with the activities created in the code
+ * */
 abstract class BaseActivity<VB : ViewBinding> : AppCompatActivity() {
 
     private var _binding: VB? = null

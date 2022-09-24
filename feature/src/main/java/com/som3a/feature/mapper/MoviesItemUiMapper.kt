@@ -5,6 +5,12 @@ import com.som3a.domain.entity.MovieEntity
 import com.som3a.feature.model.MoviesItemUiModel
 import javax.inject.Inject
 
+/**
+ * This mapper used to map between the data came from the domain
+ * layer to our UI
+ * here we can handle all ui fields data and get it in a proper way
+ * to show it in the view through the [MoviesItemUiModel]
+ * */
 class MoviesItemUiMapper @Inject constructor() : Mapper<MovieEntity, MoviesItemUiModel> {
     override fun map(input: MovieEntity): MoviesItemUiModel {
         return MoviesItemUiModel(

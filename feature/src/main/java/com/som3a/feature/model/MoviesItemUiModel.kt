@@ -3,6 +3,11 @@ package com.som3a.feature.model
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
+/**
+ * represents the data we need to display in its
+ * places
+ * use it in the presentation layer
+ * */
 @Parcelize
 data class MoviesItemUiModel(
     val id: Int,

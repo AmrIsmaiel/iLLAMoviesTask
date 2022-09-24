@@ -10,6 +10,10 @@ import dagger.hilt.components.SingletonComponent
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 
+/**
+ * Module that holds used dispatchers related classes
+ * */
+
 @Module
 @InstallIn(SingletonComponent::class)
 object DispatcherModule {

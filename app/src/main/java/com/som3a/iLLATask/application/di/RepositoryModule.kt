@@ -11,6 +11,10 @@ import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 
+/**
+ * Module that binds dataSources related classes to make unit tests easier
+ * */
+
 @Module
 @InstallIn(SingletonComponent::class)
 abstract class RepositoryModule {

@@ -1,5 +1,10 @@
 package com.som3a.data.model
 
+
+/**
+ * This data class represents the fields that will be
+ * moved from local module to data module to use it in the feature module.
+ * */
 data class MovieDTO(
     var posterPath: String?,
     var adult: Boolean?,

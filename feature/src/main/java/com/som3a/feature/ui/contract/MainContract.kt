@@ -5,6 +5,12 @@ import com.som3a.base.ViewEvent
 import com.som3a.base.ViewState
 import com.som3a.feature.model.MoviesItemUiModel
 
+/**
+ * this class to have all states, actions and events
+ * to handle how to deal between the view and the
+ * viewModel
+ * related to main screen
+ * */
 class MainContract {
 
     sealed class Action : ViewAction {

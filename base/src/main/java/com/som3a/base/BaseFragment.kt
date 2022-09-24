@@ -8,6 +8,10 @@ import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
 
 
+/**
+ * This class is a base for fragments.
+ * here we handle all common cases with the fragments created in the code
+ * */
 abstract class BaseFragment<VB : ViewBinding> : Fragment() {
 
     private var _binding: VB? = null

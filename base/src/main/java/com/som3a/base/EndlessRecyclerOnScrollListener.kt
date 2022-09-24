@@ -4,6 +4,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.som3a.common.Constants
 
+
+/**
+ * This class is listener for the recyclerView [list of views]
+ * to handle the paging and the infinite scroll
+ * */
 abstract class EndlessRecyclerOnScrollListener(
     private val linearLayoutManager: LinearLayoutManager,
 ) : RecyclerView.OnScrollListener() {

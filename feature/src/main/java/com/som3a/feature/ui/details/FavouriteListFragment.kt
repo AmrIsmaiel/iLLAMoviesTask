@@ -18,6 +18,11 @@ import com.som3a.feature.ui.main.MovieAdapter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
+/**
+ * This fragment to display the data we
+ * got from the local database and
+ * set the data in the views and the way we want
+ * */
 @AndroidEntryPoint
 class FavouriteListFragment : BaseFragment<FragmentFavouriteListBinding>() {
 

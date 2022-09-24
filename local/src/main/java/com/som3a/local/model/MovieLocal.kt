@@ -3,6 +3,11 @@ package com.som3a.local.model
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
+/**
+ * data class represents all the fields of the model
+ * that saved in the database
+ * this represents an item in the database
+ * */
 @Entity(tableName = "movies")
 data class MovieLocal(
     @PrimaryKey

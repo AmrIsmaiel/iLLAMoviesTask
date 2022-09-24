@@ -14,7 +14,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
-
+/**
+ * Module that holds network layer related classes
+ * */
 @Module
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
@@ -41,6 +43,11 @@ object NetworkModule {
             .build()
     }
 
+
+    /**
+     * here we initialize retrofit builder and set the [baseUrl]
+     * and add Gson converter and the okHttp client
+     * */
     @Provides
     fun provideRetrofitClient(okHttpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
@@ -50,6 +57,11 @@ object NetworkModule {
             .build()
     }
 
+
+    /**
+     * here we create single instance of retrofit
+     * with the help of [ApiService] interface
+     * */
     @Provides
     @Singleton
     fun provideApiService(retrofit: Retrofit): ApiService {

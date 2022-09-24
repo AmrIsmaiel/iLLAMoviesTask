@@ -11,6 +11,12 @@ import com.som3a.feature.R
 import com.som3a.feature.databinding.ItemMovieBinding
 import com.som3a.feature.model.MoviesItemUiModel
 
+/**
+ * class to handle data representation if the data
+ * was list and needed to be displayed in a scrolling list
+ * of cards
+ * it handle all card changes, clicks and data changes
+ * */
 class MovieAdapter constructor(
     private val favouriteList: Boolean,
     private val favouriteMovie: ((itemUiModel: MoviesItemUiModel) -> Unit)? = null,

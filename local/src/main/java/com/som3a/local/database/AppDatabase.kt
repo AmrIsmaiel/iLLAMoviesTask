@@ -4,6 +4,10 @@ import androidx.room.Database
 import androidx.room.RoomDatabase
 import com.som3a.local.model.MovieLocal
 
+
+/**
+ * Class to create the local database
+ */
 @Database(
     entities = [MovieLocal::class],
     version = 1,

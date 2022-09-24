@@ -3,6 +3,10 @@ package com.som3a.local.database
 import androidx.room.*
 import com.som3a.local.model.MovieLocal
 
+/**
+ * class represent the queries we can make
+ * on the database
+ */
 @Dao
 interface MoviesDAO {
 
